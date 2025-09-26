@@ -6,12 +6,9 @@ public class main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        double sc1 = scanner.nextDouble();
-        double sc2 = scanner.nextDouble();
-        if ((sc1 * sc2)>20){
-            System.out.println(1 / tan(sc2));
-        } else {
-            System.out.println(sc1 / 3);
-        }
+        double a = scanner.nextDouble();
+        double b = scanner.nextDouble();
+        System.out.println(min(a, b)-(2*sqrt(max(a, b)))/(1+(max(a, b)/min(a, b))));
+
     }
 }
